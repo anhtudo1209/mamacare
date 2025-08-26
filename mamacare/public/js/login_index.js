@@ -4,6 +4,11 @@ registerBtn.onclick = function () {
     document.getElementById("login_form").style.display = "none";
     document.getElementById("register_form").style.display = "block";
 };
+document.getElementById("showregister").onclick = function(event) {
+    document.getElementById("login_message").style.display = "block";
+    document.getElementById("login_form").style.display = "block";
+    document.getElementById("register_form").style.display = "none";
+}
 
 document.getElementById("login_form").onsubmit = function(event) {
     event.preventDefault();  
