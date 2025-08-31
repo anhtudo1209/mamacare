@@ -1,4 +1,4 @@
-// Handle check-in button
+
 const checkinbtn = document.getElementById("check-in");
 if (checkinbtn) {
     checkinbtn.onclick = function() {
@@ -16,13 +16,12 @@ if (checkinbtn) {
     };
 }
 
-// Handle birthday form submit
-const submitform = document.getElementById("submitform");
+const submitform = document.getElementById("submitfirstday");
 if (submitform) {
     submitform.onsubmit = function(event) {
         event.preventDefault();
         const formData = new FormData(this);
-        fetch("index.php?action=savebirthday", {
+        fetch("index.php?action=savefirstday", {
             method: "POST",
             body: formData
         })

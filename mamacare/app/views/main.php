@@ -8,16 +8,16 @@
 <body>
     <h1>
         Welcome, <?= htmlspecialchars($_SESSION['user']) ?>!
+    </h1>
+    <h2>
         <?php if (!empty($currentweek)): ?>
-            <br>
             You are currently in <strong>week <?= $currentweek ?></strong> of your pregnancy.
         <?php endif; ?>
-    </h1>
-
-    <?php if (empty($birthday)): ?>
-        <form id="submitform">
-            <label>Chọn ngày sinh:</label>
-            <input type="date" name="birthday" required>
+    </h2>
+    <?php if (empty($firstday)): ?>
+        <form id="submitfirstday">
+            <label>Chọn ngày thụ thai:</label>
+            <input type="date" name="firstday">
             <button type="submit">Lưu</button>
         </form>
         <p id="birthday_message"></p>

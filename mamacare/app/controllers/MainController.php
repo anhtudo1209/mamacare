@@ -14,8 +14,8 @@ class MainController {
         }
         $username = $_SESSION['user'];
         $userdata = $this->user->findByUsername($username);
-        $birthday = $userdata["birth_day"] ?? NULL;
-        $currentweek = $birthday ? $this->user->getcurrentweek($birthday) : null;
+        $firstday = $userdata["first_day"] ?? NULL;
+        $currentweek = $firstday ? $this->user->getcurrentweek($firstday) : null;
         include __DIR__ . "/../views/main.php";
     }
 }

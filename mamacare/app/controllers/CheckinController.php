@@ -33,7 +33,7 @@ class CheckinController {
         }
 
         if ($this->checkin->doCheckin($username, $today)) {
-            $week = $this->usermodel->getcurrentweek($user['birth_day']);
+            $week = $this->usermodel->getcurrentweek($user['first_day']);
             $tip = $this->checkin->getTip($user['id'], $week);
 
             if ($tip) {

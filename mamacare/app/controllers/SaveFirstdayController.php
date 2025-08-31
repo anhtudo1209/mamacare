@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . "/../models/savebirthday.php";
+require_once __DIR__ . "/../models/savefirstday.php";
 
-class BirthdayController {
-    private $birthday;
+class SaveFirstdayController {
+    private $firstday;
 
     public function __construct($db) {
-        $this->birthday = new Birthday($db);
+        $this->firstday = new Firstday($db);
     }
 
     public function save() {
@@ -14,13 +14,13 @@ class BirthdayController {
             exit;
         }
 
-        $birthday = $_POST['birthday'] ?? null;
-        if (!$birthday) {
-            echo "Vui lòng nhập ngày sinh";
+        $firstday = $_POST['firstday'] ?? null;
+        if (!$firstday) {
+            echo "Vui lòng nhập ngày thụ thai";
             return;
         }
         $username = $_SESSION['user'];
-        $result = $this->birthday->saveBirthday($username, $birthday);
+        $result = $this->firstday->savefirstday($username, $firstday);
         if ($result === "Chọn ngày thành công") {
             header("Location: index.php?action=main");
             exit;

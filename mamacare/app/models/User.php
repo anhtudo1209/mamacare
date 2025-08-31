@@ -29,12 +29,12 @@ class User {
         }
         return $stmt->execute([$username, $password]);
     }
-    public function getcurrentweek($birthday) {
+    public function getcurrentweek($firstday) {
         $today = date("Y-m-d");
-        $birth = new DateTime($birthday);
+        $first = new DateTime($firstday);
         $todayObj = new DateTime($today);
-        $interval = $birth->diff($todayObj);
-        return 40 - floor($interval->days / 7);
+        $interval = $first->diff($todayObj);
+        return floor($interval->days / 7) + 1;
     }
     
 }
