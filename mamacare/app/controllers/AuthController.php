@@ -59,7 +59,6 @@ class AuthController {
         }
     }
     public function logout() {
-        //session_start();
         session_unset();
         session_destroy();
         echo "Logout successful";
