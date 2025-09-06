@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1> MamaCare </h1> <br>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>MamaCare</h1>
+    <br />
     <form id="login_form" method="post" style="display: block">
-        <label> Tên đăng nhập </label>
-        <input type="text" name="username"> <br>
-        <label> Mật khẩu </label>
-        <input type="password" name="password"> <br>
-        <button id="login_button" type="submit"> Đăng nhập </button>
-        <p> Hoặc </p> 
-        <button id="register" type="button"> Đăng kí </button>
+      <label> Tên đăng nhập </label>
+      <input type="text" name="username" /> <br />
+      <label> Mật khẩu </label>
+      <input type="password" name="password" /> <br />
+      <button id="login_button" type="submit">Đăng nhập</button>
+      <p>Hoặc</p>
+      <button id="register" type="button">Đăng kí</button>
     </form>
     <form id="register_form" method="post" style="display: none">
-        <label> Tên đăng nhập </label>
-        <input name="new_username" type="text"> <br>
-        <label> Mật khẩu </label>
-        <input name="new_pass" type="password"> <br>
-        <label> Nhập lại mật khẩu  </label>
-        <input name="confirm_pass" type="password"> <br>
-        <button id="register_button" type="submit"> Đăng kí </button> <br>
-        <p> Đã có tài khoản? <a href="javascript:void(0)" id="showregister">Đăng nhập</a></p>
+      <label> Tên đăng nhập </label>
+      <input name="new_username" type="text" /> <br />
+      <label> Mật khẩu </label>
+      <input name="new_pass" type="password" /> <br />
+      <label> Nhập lại mật khẩu </label>
+      <input name="confirm_pass" type="password" /> <br />
+      <button id="register_button" type="submit">Đăng kí</button> <br />
+      <p>
+        Đã có tài khoản?
+        <a href="javascript:void(0)" id="showregister">Đăng nhập</a>
+      </p>
     </form>
-    <p id="login_message"> </p>
+    <p id="login_message"></p>
     <script src="js/login_index.js"></script>
-</body>
+  </body>
 </html>
