@@ -1,318 +1,401 @@
 body {
-    font-family: 'Comic Sans MS', 'Marker Felt', cursive, sans-serif;
-    background-color: #fffefc;
-    background-image: 
-    url('8778968.png'),
-    url('8779312.png'),
+  font-family: "Comic Sans MS", "Marker Felt", cursive, sans-serif;
+  background-color: #fffefc;
+  background-image: url("8778968.png"), url("8779312.png"),
     linear-gradient(135deg, #ffecef, #e0f7fa, #fefae0, #f0f0ff);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center center, center center, center;
-    background-size: cover, cover, cover;
-    color: #5a3e4b;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    padding-top: 220px;
-    background-image: linear-gradient(135deg, #ffecef, #e0f7fa, #fefae0, #f0f0ff);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, center center, center;
+  background-size: cover, cover, cover;
+  color: #5a3e4b;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 10%;
+  background-image: linear-gradient(135deg, #ffecef, #e0f7fa, #fefae0, #f0f0ff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
-h1, h2 {
-    color: #ff6b91;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(255, 107, 145, 0.1);
+h1,
+h2 {
+  color: #ff6b91;
+  text-align: center;
+  text-shadow: 20px 2px 4px rgba(255, 107, 145, 0.1);
 }
 
 h1 {
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-shadow:
-    0 0 5px #ffffff,
-    0 0 10px #ffffff,
-    0 0 35px #fffc9e,
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 35px #fffc9e,
     0 0 20px #fcd7db;
-
 }
-
+/*khung*/
 form {
-    width: 100%;
-    max-width: 400px;
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -10px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
-
+/*ten dang nhap & mat khau*/
 form label {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-    margin-right: 10px;
-    vertical-align: middle;
+  line-height: 2;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 form input[type="text"],
 form input[type="password"],
 form input[type="date"] {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 280px;
-    padding: 12px 15px;
-    font-size: 1rem;
-    border: 1px solid #ffc0d9;
-    border-radius: 12px;
-    transition: all 0.3s;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(255, 107, 145, 0.05);
-    margin-bottom: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  max-width: 300px;
+  padding: 12px 18px;
+  font-size: 17px;
+  border: 1px solid #ffc0d9;
+  border-radius: 12px;
+  transition: all 0.3s;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(255, 107, 145, 0.05);
+  margin-bottom: 6px;
+  margin-top: 4px;
 }
 
 input::placeholder {
-    color: #c9a8b8;
-    font-style: italic;
+  color: #c9a8b8;
+  font-style: normal;
 }
 
 input:focus {
-    border-color: #e83e8c;
-    outline: none;
+  border-color: #e83e8c;
+  outline: none;
 }
+/*nút đăng nhập*/
 button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 #login_button,
 #register_button {
-    background: linear-gradient(135deg, #ff6b91, #fca3d3);
-    color: white;
-    width: 100%;
-    max-width: 250px;
+  background: linear-gradient(135deg, #ff6b91, #fca3d3);
+  color: white;
+  width: 100%;
+  max-width: 160px;
 }
 
 #login_button:hover,
 #register_button:hover {
-    background: linear-gradient(135deg, #fca3d3, #ff6b91);
+  background: linear-gradient(135deg, #fca3d3, #ff6b91);
 }
 
 #register {
-    background-color: #e0e0e0;
-    color: #444;
-    width: 100%;
-    max-width: 250px;
+  background-color: #e0e0e0;
+  color: #444;
+  width: 100%;
+  max-width: 160px;
 }
 
 #register:hover {
-    background-color: #c8c8c8;
+  background-color: #c8c8c8;
 }
 
 p#login_message {
-    color: #e83e8c;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
+  color: #e83e8c;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
 }
 
 form a {
-    color: #e83e8c;
-    text-decoration: none;
-    margin-top: 10px;
+  color: #e83e8c;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 form a:hover {
-     text-decoration: underline;
+  text-decoration: underline;
 }
 
 .divider {
-    text-align: center;
-    margin: 25px 0;
-    position: relative;
-    color: #ff8fab;
-    font-weight: bold;
-    font-size: 0.9em;
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+  color: #ff8fab;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 .divider::before,
 .divider::after {
-    background: linear-gradient(to right, transparent, #ffc2d1, transparent);
-    height: 2px;
-    content: "";
-    width: 40%;
-    position: absolute;
-    top: 50%;
+  background: linear-gradient(to right, transparent, #ffc2d1, transparent);
+  height: 2px;
+  content: "";
+  width: 40%;
+  position: absolute;
+  top: 50%;
 }
 
 .divider::before {
-    left: 0;
+  left: 0;
 }
 
 .divider::after {
-    right: 0;
+  right: 0;
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
+  body {
+    padding: 10px;
   }
 
-    form {
-        padding: 20px;
+  form {
+    padding: 20px;
   }
 
-    form label {
-        display: block;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 6px;
+  form label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
   }
 
-    form input[type="text"],
-    form input[type="password"],
-    form input[type="date"] {
-        display: block;
-        max-width: 100%;
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="date"] {
+    display: block;
+    max-width: 100%;
   }
 
-    h1 {
-        font-size: 2rem;
+  h1 {
+    font-size: 2rem;
   }
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
-
+/*điền thông tin thai kì*/
 h1 {
-     animation: float 4s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 h2 {
-    -webkit-text-stroke: 1px #ff8fab;
-    color: transparent;
-    letter-spacing: 2px;
+  -webkit-text-stroke: 1px #f49bb1;
+  letter-spacing: 2px;
 }
 
 p#login_message {
-    text-shadow: 0 0 10px #ff6b91, 0 0 20px #ff6b91;
-    animation: neon 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #ff6b91, 0 0 20px #ff6b91;
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes neon {
-    from { opacity: 0.8; }
-    to { opacity: 1; }
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 input:focus {
-    animation: input-glow 0.5s forwards;
+  animation: input-glow 0.5s forwards;
 }
 
 @keyframes input-glow {
-    0% { box-shadow: 0 0 0 rgba(232, 62, 140, 0); }
-    100% { box-shadow: 0 0 15px rgba(232, 62, 140, 0.4); }
+  0% {
+    box-shadow: 0 0 0 rgba(232, 62, 140, 0);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(232, 62, 140, 0.4);
+  }
 }
-
+/*nút xác nhận ngày đẻ*/
 button {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    border-radius: 100%;
-    transform: scale(1, 1) translate(-50%);
-    transform-origin: 50% 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
 }
 
 button:focus::after {
-    animation: ripple 0.6s ease-out;
+  animation: ripple 0.6s ease-out;
+}
+#submit {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ff6b91, #fca3d3);
+  color: white;
+}
+
+#submit:hover {
+  background: linear-gradient(135deg, #fca3d3, #ff6b91);
 }
 
 @keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(20, 20);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
 }
 
 form a {
-    position: relative;
+  position: relative;
 }
 
 form a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(to right, #ff6b91, #90d5ec);
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ff6b91, #90d5ec);
+  transition: width 0.3s ease;
 }
 
 form a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 @media (max-width: 480px) {
-    h1 {
-        animation: none;
-    }
-    h2 {
-        -webkit-text-stroke: 0.5px #ff8fab;
-    }
-    }
-    body {
-    position: relative;
-    z-index: 0;
+  h1 {
+    animation: none;
+  }
+  h2 {
+    -webkit-text-stroke: 0.5px #ff8fab;
+  }
+}
+body {
+  position: relative;
+  z-index: 0;
 }
 
 body::before,
 body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.65; 
-    z-index: -1;
-    pointer-events: none; 
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.65;
+  z-index: -1;
+  pointer-events: none;
 }
 body::before {
-    background-image: url('8778968.png');
+  background-image: url("8778968.png");
 }
 
 body::after {
-     background-image: url('8779312.png');
+  background-image: url("8779312.png");
+}
+/* Khung chào mừng trở lại */
+#welcome-box {
+  background: rgba(255, 255, 255, 0.3); /* nền trắng trong suốt 30% */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  backdrop-filter: blur(10px); /* tạo hiệu ứng mờ */
+  border: 1.5px solid rgba(255, 255, 255, 0.3); /* viền nhẹ */
+}
+
+/* Nút điểm danh */
+#check-in {
+  background: linear-gradient(135deg, #ff9eb5, #fbb4ca);
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 107, 145, 0.3);
+  margin-top: 10px;
+}
+
+#check-in:hover {
+  background: linear-gradient(135deg, #fbb4ca, #ff9eb5);
+}
+
+/* Dòng hiển thị thời gian */
+#timer {
+  margin-top: 18px;
+  font-size: 1.1rem;
+  color: #d1436e;
+  font-weight: bold;
+  animation: neon 2s ease-in-out infinite alternate;
+}
+
+#checkin_message {
+  color: #e83e77;
+  font-style: italic;
+  margin-top: 10px;
+}
+button[onclick*="logout"] {
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: #faf6f6;
+  color: #d04f67;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(99, 98, 98, 0.3);
+  max-width: 200px;
+  text-align: center;
 }
