@@ -25,17 +25,7 @@
         <button id="check-in">Check-in</button>
         <p id="checkin_message"></p>
     <?php endif; ?>
-    <button id="logout">Đăng xuất</button>
+    <button id="logout" href="index.php?action=logout">Đăng xuất</button>
     <script src="js/index.js"></script>
-    <script>
-    document.getElementById("logout").onclick = function() {
-        fetch("index.php?action=logout", { method: "POST" })
-            .then(res => res.text())
-            .then(msg => {
-                alert(msg);
-                window.location.href = "index.php?action=loginpage";
-            });
-    };
-    </script>
 </body>
 </html>

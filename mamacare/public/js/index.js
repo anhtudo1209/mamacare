@@ -43,3 +43,7 @@ if (submitform) {
         });
     };
 }
+
+document.getElementById("logout").onclick = () => {
+    window.location.href = "index.php?action=logout";
+};
