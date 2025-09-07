@@ -4,9 +4,10 @@ require_once __DIR__ . "/../app/controllers/AuthController.php";
 require_once __DIR__ . "/../app/controllers/MainController.php";
 require_once __DIR__ . "/../app/controllers/CheckinController.php";
 require_once __DIR__ . "/../app/controllers/SaveFirstdayController.php";
+require_once __DIR__ . "/../config/database.php";
 
-$dsn = "mysql:host=localhost;dbname=mamacare;charset=utf8";
-$db = new PDO($dsn, "root", "");
+$database = new Database();
+$db = $database->getConnection();
 
 $action = $_GET['action'] ?? null;
 
